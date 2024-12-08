@@ -11,12 +11,15 @@ Key Components:
 
 
 Custom Model: Designed to work specifically for the classification task, with modifications to the architecture based on the dataset's nature.
+
 ResNet50: A pre-trained model using the ResNet50 architecture, which has been fine-tuned by replacing the final classification layers for our task.
+
 VGG16: Another pre-trained model using the VGG16 architecture, similarly fine-tuned to classify images from the Defungi dataset.
 
 
 Workflow:
 Data Preprocessing: The dataset images were resized and normalized to match the input requirements of both the custom and pre-trained models.
+
 Model Training: Models were trained using data augmentation techniques to improve generalization. The custom model, ResNet50, and VGG16 were all trained using the dataset, and their performance was compared.
 
 Fine-Tuning: Both ResNet50 and VGG16 were fine-tuned by changing the classifier part of the model while freezing the earlier convolutional layers to retain pre-trained knowledge.
