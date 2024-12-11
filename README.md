@@ -22,8 +22,14 @@ Data Preprocessing: The dataset images were resized and normalized to match the 
 
 Model Training: Models were trained using data augmentation techniques to improve generalization. The custom model, ResNet50, and VGG16 were all trained using the dataset, and their performance was compared.
 
-Fine-Tuning: Both ResNet50 and VGG16 were fine-tuned by changing the classifier part of the model while freezing the earlier convolutional layers to retain pre-trained knowledge.
+Fine-Tuning: Both DenseNet50 and VGG16 were fine-tuned by changing the classifier part of the model while freezing the earlier convolutional layers to retain pre-trained knowledge.
 
 
 Evaluation:
 Performance was evaluated using metrics such as accuracy, confusion matrix, and classification report, comparing the models' effectiveness in classifying fungal species.
+
+
+Challenges:
+
+We had imbalanced dataset.So for some classes model could generalize in more accurate way.
+Also, due to the the inadequate GPU facility in Google colab, we couldn't run the pretrained model for around 50 epocs, to see how they improve and perform better with large number of epocs.
